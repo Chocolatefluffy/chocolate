@@ -1,0 +1,7 @@
+#!name=Unlock Any Revenuecat
+#!desc=Auto All Revenuecat
+[MITM]
+hostname = api.revenuecat.com
+
+[Script]
+AutoRC=type=http-response,script-path= https://raw.githubusercontent.com/Chocolatefluffy/chocolate/main/rcauto.js,pattern= ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$),max-size=131072,requires-body=true,timeout=20,script-update-interval=0,debug=false,enable=true
