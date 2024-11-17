@@ -1,0 +1,7 @@
+#!name=RP Diet
+#!desc=Unlock RP DIET
+[MITM]
+hostname = api.rpstrength.com
+
+[Script]
+RPDIET=type=http-response,script-path= https://raw.githubusercontent.com/Chocolatefluffy/chocolate/main/rpdiet.js,pattern=https://api.rpstrength.com/user,max-size=131072,requires-body=true,timeout=20,script-update-interval=0,debug=false,enable=true
