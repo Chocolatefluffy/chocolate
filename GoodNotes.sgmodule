@@ -1,0 +1,7 @@
+#!name=GoodNotes
+#!desc=Good
+[MITM]
+hostname = isi.csan.goodnotes.com
+
+[Script]
+GoodNotes=type=http-response,script-path= https://raw.githubusercontent.com/Chocolatefluffy/chocolate/main/goodnotes.js,pattern=^https:\/\/isi\.csan\.goodnotes\.com\/v1\/subscribers\/[a-f0-9\-]+$,max-size=131072,requires-body=true,timeout=20,script-update-interval=0,debug=false,enable=true
